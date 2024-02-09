@@ -1,0 +1,50 @@
+A. Introduction to the internet
+    A.1. Network
+    : Sekumpulan komputer atau device lain yang
+    terkoneksi antar satu dengan lainnya. Contohnya ialah
+    komputer anda dirumah terkoneksi kepada handphone. 
+
+    A.2. internet
+    : Sekumpulan network yang menghubungkan komputer di seluruh dunia
+
+    A.3. Sejarah awal internet
+    : Internet dibuat pada tahun 1960 oleh department pertahanan
+    amerika untuk menghindari ancaman serangan nuklir. 
+
+B. How the internet works
+    : Internet bekerja dengan menghubungkan device dan sistem komputer bersama menggunakan 
+    protokol yang sudah distandarisasi. Protokol ini mendefinisikan bagaimana informasi ditukar
+    antar perangkat dan memastikan data yang dikirim terkirim secara aman.
+
+C. Basic concepts dan terminology
+    C.1. Packet
+    : Unit data yang kecil yang dikirimkan melalui internet
+
+    C.2. Router
+    : Perangkat yang mengirimkan paket data antar jaringan 
+    yang berbeda
+
+    C.3. IP Address
+    : Pengenal unik yang dimiliki oleh setiap perangkat jaringan, digunakan untuk
+    mengarahkan data ke destinasi yang tepat.
+
+    C.4. Domain Name
+    : Nama yang mudah dibaca oleh manusia digunakan untuk mengidentifikasi
+    website. Contoh (google.com)
+
+    C.5. DNS (Domain Name System)
+    : Menerjemahkan nama domain ke UP address.
+
+    C.6. HTTP (Hypertext Trasfer Protocol)
+    : Protokol yang digunakan untuk mengirim data antara client dengan server.
+
+    C.7. HTTP (Hypertext Trasfer Protocol Secure)
+    : Protokol yang di enkripsi digunakan untuk komunikasi yang aman
+    antara client dan server
+
+    C.8. SSL/TLS (Secure Layer and Transport Layer)
+    : Protokol security yang digunakan untuk memberikan informasi yang aman 
+    untuk internet
+
+D. Peran protokol dalam internet
+: 
