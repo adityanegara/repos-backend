@@ -1,4 +1,4 @@
-A. Introduction to the internet
+A. Pendahuluan dari internet
     A.1. Network
     : Sekumpulan komputer atau device lain yang
     terkoneksi antar satu dengan lainnya. Contohnya ialah
@@ -16,7 +16,7 @@ B. How the internet works
     protokol yang sudah distandarisasi. Protokol ini mendefinisikan bagaimana informasi ditukar
     antar perangkat dan memastikan data yang dikirim terkirim secara aman.
 
-C. Basic concepts dan terminology
+C. Konsep dasar dan terminologi
     C.1. Packet
     : Unit data yang kecil yang dikirimkan melalui internet
 
@@ -47,4 +47,75 @@ C. Basic concepts dan terminology
     untuk internet
 
 D. Peran protokol dalam internet
-: 
+: Protokol ialah seperangkat aturan dan standart yang mendefinisikan
+bagaimana informasi ditukarkan antar device dan sistem.
+    D.1. Contoh-contoh protokol
+    : 1. IP (Internet Protocol)
+      2. TCP (Transmission Control Protocol)
+      3. UDP (User Datagram Protocol)
+      4. DNS (Domain Name System)
+
+E. Alamat IP dan nama Domain
+    E.1. Alamat IP
+    : Pengenal unik yang dimiliki oleh setiap perangkat
+    pada jaringan. Digunakan untuk mengarahkan data
+    ke destinasi yang benar. Alamat IP biasanya direpresentasikan
+    dengan sekumpulan nomor dipisahkan dengan tanda titik
+    "192.168.11"
+
+    E.2. Domain Names
+    : Nama yang dapat dengan mudah dibaca manusia untuk mengidentifikasi
+    website dan sumber daya di internet. Contohnya seperti
+    "google.com" Domain names diterjemahkan menjadi IP address menggunakan
+    domain name system.
+
+F. Membuat aplikasi dengan TCP/IP
+: TCP/IP ialah protokol yang paling banya digunakan oleh
+aplikasi di internet. TCP/IP memberikan pengiriman data yang
+dapat diandalkan, terurut, dan ada pengecheckan error antara aplikasi
+yang berjalan dengan perangkat berebda.
+
+    F.1. Konsep dan Terminologi
+        F.1.1. Ports
+        : Ports digunakan untuk mengidentifikasi aplikasi
+        atau servis yang berjalan pada perangkat. Setiap aplikasi 
+        atau servis berjalan menggunakan nomor port yang unik. Mengizinkan data
+        dikirim kepada tujuan yang tepat.
+
+        F.1.2. Sockets
+        : Terbuat dari kombinasi alamat IP dan nomor port,
+        merepresentasikan endpoint spesifik untuk komunikasi.
+        Sockets digunakan untuk mendirikan koneksi antar perangkat dan
+        mentransfer data antar aplikasi.
+
+        F.1.3. Connections
+        : Connections dibuat antara dua socket ketika dua perangkat ingin 
+        berkomunikasi. Ketika proses koneksi dibuat, perangkat menegosiasi beberapa parameter
+        seperti maximun segment size dan window size, yang menentukan bagaimana data
+        dikirim melalui koneksi.
+
+        F.1.4. Data Transfer
+        : Ketika connections sudah didirikan, data dapat dikirim antar
+        aplikasi. Data ini biasanya dikirim bagian-bagiannya. Setiap bagian mengandung
+        nomor urut dan metadata lainnya untuk memastikan pengiriman 
+        yang dapat diandalkan.
+
+G. Mengamankan komunikasi internet dengan SSL/TLS
+: SSL/TLS ialah protokol untuk mengenkripsi data yang dikirimkan dari internet.
+Biasanya digunakan untuk memberikan koneksi yang aman antara aplikasi.
+
+    G.1. Konsep dan terminologi
+        G.1.1. Certificates
+        : SSL/TSL certificates digunakan untuk mendirikan
+        kepercayaan antara client dan server. Ini mengandung informasi berisikan
+        identitas dari server dan diverifikasi oleh third party (autoritas ceritificate)
+
+        G.1.2. Handshake
+        : Selama proses SSL/TLS handshake. Client dan server bertukar informasi untuk
+        menegosiasikan algoritma enkripsi dan parameter lainnya untuk koneksi yang aman.
+
+        G.1.3. Enkripsi
+        : Ketika koneksi sudah dibuat data dienkripsi menggunakan
+        algoritma yang disetujui dan dapat dikirimkan secara aman antara client dan server.
+
+        
