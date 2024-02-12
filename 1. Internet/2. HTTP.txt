@@ -1,0 +1,81 @@
+A. Definisi HTTP (Hypertext Transfer Protocol)
+: HTTP ialah protokol application layer yang  didesain untuk
+mentransfer informasi antara perangkat yang terhubung dan berjalan 
+diatas tumpukan protokol lainnya. Biasanya alur HTTP melibatkan mesin client
+merequest ke server yang kemudian server mengembalikan pesan tersebut.
+
+B. Apa itu request HTTP?
+: Request http ialah cara internet berkomunikasi seperti web browser meminta
+informasi untuk membuka website. 
+    B.1. Request HTTP biasayang mengandung
+    : 1. HTTP version type
+      2. URL
+      3. HTTP method
+      4. HTTP request headers
+      5. Optional HTTP body
+
+C. Apa itu HTTP method?
+: Aksi yang request HTTP harapkan dari server. Contohnya
+bila HTTP methodnya GET berarti client berharap mendapatkan 
+informasi dari server. Bila methodnya POST berarti client berharap
+server menerima data dari client.
+
+D. Apa itu HTTP request headers?
+: HTTP headers berisikan informasi berbentuk key dan value. Biasanya berisikan
+browser apa yang client gunakan, dan data apa yang direquest.
+    D.1. Contoh request ke google
+    : Request headers
+      :authority: www.google.com
+      :method: GET
+      :path: /
+      :scheme: https
+      accept: text/html
+      accept-encoding: gzip,deflate, br
+      accept_language: en-US, en; q=0.9
+      upgrade-insecure-requests: 1
+      user-agent: Mozilla/5.0
+
+E. Apa itu HTTP request body?
+: Bagian dari request yang berisikan informasi dari request tersebut. Seperti
+username dan password.
+
+F. Apa itu HTTP response
+: HTTP response ialah apa yang client terima dari server, sebagai balasan dari HTTP request. 
+    F.1. Biasanya berisikan
+    : 1. HTTP status code
+      2. HTTP response headers
+      3. HTTP body
+
+G. Apa itu HTTP status code
+: code 3 digit yang mengindikasikan status dari HTTP request kita.
+    G.1. 1XX
+    : Berisikan informasi response informational
+
+    G.2. 2XX
+    : Berisikan informasi response success
+
+    G.3. 3XX
+    : Berisikan informasi response dialihkan
+
+    G.4. 4XX
+    : Berisikan informasi response client
+    error.
+
+    G.5. 5XX
+    : Berisikan informasi response server error.
+
+H. Response headers
+: Berisikan informasi seperti bahasa, dan format
+    H.1. Contoh HTTP response header dari google 
+    : Response headers
+       cache-control: private,  max-age=0
+       content-encoding: br
+       content-type: text/html; charset=UTF-8
+       date: Thu, 21 Dec 2017 18:25:08 GMT
+       status: 200
+       strict-transport-security: max-age=86400
+       x-frame-options: SAMEORIGIN
+       
+I. Apa itu HTTP response body?
+: Berisikan informasi yang direquest client. Contohnya client merequest untuk
+membuka halaman beranda. Server akan memberikan ke client HTML data pada body response.
