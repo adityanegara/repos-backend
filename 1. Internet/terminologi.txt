@@ -1,0 +1,28 @@
+A. Single threaded
+: Hanya memiliki satu thread untuk mengeksekusi. Thread ini memproses
+pekerjaan secara urut. 
+
+B. DNS Lookup
+: Proses domain yang mudah dibaca (www.google.com) dikonversi
+menjadi alamat iP (216.133.222.33)
+
+C. TLS (Transport Layer Security)
+: Protokol yang memberikan privasi dan 
+integritas data antara dua aplikasi yang saling berkomunikasi 
+melalui jaringan komputer.
+
+D. TTFB (Time to First Byte)
+: Waktu yang diperlukan untuk browser meminta response HTML sampai 
+mendapatkannya.
+
+E. Parsing
+: Mengubah data yang didapatkan dari server menjadi DOM dan CSSOM.
+
+F. DOM (Document Object Model)
+: Antarmuka programming yang merepresentasikun struktur dari HTML sebagai
+objek tree, mengizinkan interaksi yang dynamic dan manipulasi konten dokumen dalam
+pengembangan web.
+
+G. CSSOM (Cascading Style Sheets Object Model)
+: Antarmuka programming yang merepresentasikan dan mengizinkan manipulasi style yang
+diaplikasikan ke dokument HTML dalam pengembangan web.

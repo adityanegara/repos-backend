@@ -1,0 +1,65 @@
+A. Ringkasan
+: Website yang cepat akan memberikan pengalaman yang lebih baik kepada pengguna.
+2 Permasalahan dari performa web ialah latency dan kebanyakan browser
+ialah single threaded
+
+B. Navigation
+: Langkah pertama dalam membuka web page ialah user
+merequest halaman dengan mengetikkan URL pada address bar.
+
+C. DNS Lookup
+: Langkah pertama navigasi ialah untuk mencari dimana assets dari halaman tersebut berada.
+Jika kamu menavigasi ke halaman 'https://example.com' Halaman tersebut berada pada
+IP '93.184.216.34'. Jika kamu belum masuk ke halaman tersebut akan terjadi proses DNS lookup.
+
+D. TCP Handshake
+: Ketika alamat iP sudah diketahui, browser membuat koneksi ke server melalui
+TCP three way handshake. Mekanisme ini berfungsi agar browser dan server
+dapat berkomunikasi. 
+
+E. TLS Negotiation
+: TLS negotiation menentukan sandi apa yang digunakan untuk mengenkripsi
+komunikasi, memberifikasi server, dan menetapkan bahwa koneksi sudah aman sebelum
+memulai transfer data. 
+
+F. Response
+: Setelah kita membangun koneksi ke server, browser mengirimkan initial
+HTTP GET request. Server akan mengembalikan response HTML. Waktu selama
+initial request menunggu sampai mendapatkan data pertama disebut (TTFB) Time to First Byte
+
+G. Parsing
+: Setelah browser mendapatkan response dari server, browser dapat mulai memparsing
+informasi yang diterimanya. Parsing ialah broses browser mengubah data yang
+diterimanya menjadi DOM dan CSSOM. 
+
+H. Membuat DOM Tree
+: DOM Tree ialah konten dari dokumen. Tag <html> ialah elemen pertama
+dan berada di paling atas document tree. tree ini merefleksikan
+hubungan dan hirarki antar element. Semakin banyak DOM nodes,
+semakin lama pula waktu yang dibutuhkan untuk membangun DOM tree. 
+
+I. Preload Scanner
+: Selagi browser membangun DOM tree, preload scanner akan mencari di dalam konten
+sumber daya yang prioritasnya tinggi, seperti CSS, Javascript, dan fonts. Sehingga
+kita tidak harus menunggu parser menemukan referensi ke sumber daya prioritas tinggi untuk
+merequestnya.
+
+J. Membuat CSSOM Tree
+:  Browser mengonversi aturan CSS menjadi peta styles yang
+dapat browser mengerti. 
+
+K. Kompilasi Javascript
+: Selagi CSSOM dibuat file javascript yang didapatkan dari preload scanner di
+parse, di kompile, dan di interpretasi. 
+
+J. Render
+    J.1. Style
+    : Menggabungkan DOM dan CSSOM menjadi render tree. 
+    J.2. Layout
+    : Proses menentukan lokasi dan dimensi dari setiap DOM nodes.
+    J.3. Paint
+    : Browser mengkonversi setiap kotak yang di kalkulasi pada fase layout menjadi pixel.
+
+K. Interaktifitas
+: TTI (Time to Interactive) ialah ukuran seberapa lama dibutuhkan
+dari request pertama sampai halaman interaktif.
